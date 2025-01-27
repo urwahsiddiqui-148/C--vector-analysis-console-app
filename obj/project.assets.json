@@ -1,0 +1,978 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "HarfBuzzSharp/7.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "MathNet.Numerics/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net461": "1.0.2"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.2": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "OxyPlot.Core/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OxyPlot.SkiaSharp/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.2.0",
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8"
+        },
+        "compile": {
+          "lib/net8.0/OxyPlot.SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OxyPlot.SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OxyPlot.WindowsForms/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.2",
+          "OxyPlot.Core": "2.2.0"
+        },
+        "compile": {
+          "lib/net462/OxyPlot.WindowsForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/OxyPlot.WindowsForms.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp/3.116.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.116.1",
+          "SkiaSharp.NativeAssets.macOS": "3.116.1"
+        },
+        "compile": {
+          "ref/net8.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.116.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.116.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HarfBuzzSharp/7.3.0.2": {
+      "sha512": "0tCd6HyCmNsX/DniCp2b00fo0xPbdNwKOs9BxxyT8oOOuMlWjcSFwzONKyeckCKVBFEsbSmsAHPDTqxoSDwZMg==",
+      "type": "package",
+      "path": "harfbuzzsharp/7.3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "harfbuzzsharp.7.3.0.2.nupkg.sha512",
+        "harfbuzzsharp.nuspec",
+        "lib/monoandroid1.0/HarfBuzzSharp.dll",
+        "lib/monoandroid1.0/HarfBuzzSharp.pdb",
+        "lib/monoandroid1.0/HarfBuzzSharp.xml",
+        "lib/net462/HarfBuzzSharp.dll",
+        "lib/net462/HarfBuzzSharp.pdb",
+        "lib/net462/HarfBuzzSharp.xml",
+        "lib/net6.0-android30.0/HarfBuzzSharp.dll",
+        "lib/net6.0-android30.0/HarfBuzzSharp.pdb",
+        "lib/net6.0-android30.0/HarfBuzzSharp.xml",
+        "lib/net6.0-ios13.6/HarfBuzzSharp.dll",
+        "lib/net6.0-ios13.6/HarfBuzzSharp.pdb",
+        "lib/net6.0-ios13.6/HarfBuzzSharp.xml",
+        "lib/net6.0-maccatalyst13.5/HarfBuzzSharp.dll",
+        "lib/net6.0-maccatalyst13.5/HarfBuzzSharp.pdb",
+        "lib/net6.0-maccatalyst13.5/HarfBuzzSharp.xml",
+        "lib/net6.0-macos10.15/HarfBuzzSharp.dll",
+        "lib/net6.0-macos10.15/HarfBuzzSharp.pdb",
+        "lib/net6.0-macos10.15/HarfBuzzSharp.xml",
+        "lib/net6.0-tvos13.4/HarfBuzzSharp.dll",
+        "lib/net6.0-tvos13.4/HarfBuzzSharp.pdb",
+        "lib/net6.0-tvos13.4/HarfBuzzSharp.xml",
+        "lib/net6.0/HarfBuzzSharp.dll",
+        "lib/net6.0/HarfBuzzSharp.pdb",
+        "lib/net6.0/HarfBuzzSharp.xml",
+        "lib/netcoreapp3.1/HarfBuzzSharp.dll",
+        "lib/netcoreapp3.1/HarfBuzzSharp.pdb",
+        "lib/netcoreapp3.1/HarfBuzzSharp.xml",
+        "lib/netstandard1.3/HarfBuzzSharp.dll",
+        "lib/netstandard1.3/HarfBuzzSharp.pdb",
+        "lib/netstandard1.3/HarfBuzzSharp.xml",
+        "lib/netstandard2.0/HarfBuzzSharp.dll",
+        "lib/netstandard2.0/HarfBuzzSharp.pdb",
+        "lib/netstandard2.0/HarfBuzzSharp.xml",
+        "lib/netstandard2.1/HarfBuzzSharp.dll",
+        "lib/netstandard2.1/HarfBuzzSharp.pdb",
+        "lib/netstandard2.1/HarfBuzzSharp.xml",
+        "lib/tizen40/HarfBuzzSharp.dll",
+        "lib/tizen40/HarfBuzzSharp.pdb",
+        "lib/tizen40/HarfBuzzSharp.xml",
+        "lib/uap10.0.10240/HarfBuzzSharp.dll",
+        "lib/uap10.0.10240/HarfBuzzSharp.pdb",
+        "lib/uap10.0.10240/HarfBuzzSharp.xml",
+        "lib/uap10.0.16299/HarfBuzzSharp.dll",
+        "lib/uap10.0.16299/HarfBuzzSharp.pdb",
+        "lib/uap10.0.16299/HarfBuzzSharp.xml",
+        "lib/xamarinios1.0/HarfBuzzSharp.dll",
+        "lib/xamarinios1.0/HarfBuzzSharp.pdb",
+        "lib/xamarinios1.0/HarfBuzzSharp.xml",
+        "lib/xamarinmac2.0/HarfBuzzSharp.dll",
+        "lib/xamarinmac2.0/HarfBuzzSharp.pdb",
+        "lib/xamarinmac2.0/HarfBuzzSharp.xml",
+        "lib/xamarintvos1.0/HarfBuzzSharp.dll",
+        "lib/xamarintvos1.0/HarfBuzzSharp.pdb",
+        "lib/xamarintvos1.0/HarfBuzzSharp.xml",
+        "lib/xamarinwatchos1.0/HarfBuzzSharp.dll",
+        "lib/xamarinwatchos1.0/HarfBuzzSharp.pdb",
+        "lib/xamarinwatchos1.0/HarfBuzzSharp.xml"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
+      "sha512": "nycYH/WLJ6ogm+I+QSFCdPJsdxSb5GANWYbQyp1vsd/KjXN56RVUJWPhbgP2GKb/Y7mrsHM7EProqVXlO/EMsA==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.macos/7.3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "build/net6.0-macos10.15/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "build/xamarinmac2.0/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net6.0-macos10.15/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/xamarinmac2.0/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "harfbuzzsharp.nativeassets.macos.7.3.0.2.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.macos.nuspec",
+        "lib/net462/_._",
+        "lib/net6.0-macos10.15/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "lib/xamarinmac2.0/_._",
+        "runtimes/osx/native/libHarfBuzzSharp.dylib"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
+      "sha512": "DpF9JBzwws2dupOLnjME65hxQWWbN/GD40AoTkwB4S05WANvxo3n81AnQJKxWDCnrWfWhLPB36OF27TvEqzb/A==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.win32/7.3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
+        "harfbuzzsharp.nativeassets.win32.7.3.0.2.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.win32.nuspec",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "runtimes/win-arm64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x86/native/libHarfBuzzSharp.dll"
+      ]
+    },
+    "MathNet.Numerics/5.0.0": {
+      "sha512": "pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
+      "type": "package",
+      "path": "mathnet.numerics/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/net48/MathNet.Numerics.dll",
+        "lib/net48/MathNet.Numerics.xml",
+        "lib/net5.0/MathNet.Numerics.dll",
+        "lib/net5.0/MathNet.Numerics.xml",
+        "lib/net6.0/MathNet.Numerics.dll",
+        "lib/net6.0/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.5.0.0.nupkg.sha512",
+        "mathnet.numerics.nuspec"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
+      "sha512": "5/cSEVld+px/CuRrbohO/djfg6++eR6zGpy88MgqloXvkj//WXWpFZyu/OpkXPN0u5m+dN/EVwLNYFUxD4h2+A==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.nuspec"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.2": {
+      "sha512": "8shzGaD5pZi4npuJYCM3de6pl0zlefcbyTIvXIiCdsTqauZ7lAhdaJVtJSqlhYid9VosFAOygBykoJ1SEOlGWA==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies.net461/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/.NETFramework/v4.6.1/Accessibility.dll",
+        "build/.NETFramework/v4.6.1/Accessibility.xml",
+        "build/.NETFramework/v4.6.1/CustomMarshalers.dll",
+        "build/.NETFramework/v4.6.1/CustomMarshalers.xml",
+        "build/.NETFramework/v4.6.1/Facades/System.Collections.Concurrent.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Collections.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ComponentModel.Annotations.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ComponentModel.EventBasedAsync.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ComponentModel.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Diagnostics.Contracts.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Diagnostics.Debug.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Diagnostics.Tools.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Diagnostics.Tracing.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Dynamic.Runtime.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Globalization.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.IO.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Linq.Expressions.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Linq.Parallel.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Linq.Queryable.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Linq.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Net.NetworkInformation.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Net.Primitives.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Net.Requests.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Net.WebHeaderCollection.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ObjectModel.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Reflection.Emit.ILGeneration.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Reflection.Emit.Lightweight.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Reflection.Emit.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Reflection.Extensions.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Reflection.Primitives.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Reflection.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Resources.ResourceManager.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.Extensions.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.Handles.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.InteropServices.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.Numerics.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.Serialization.Json.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.Serialization.Primitives.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.Serialization.Xml.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Runtime.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Security.Principal.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ServiceModel.Duplex.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ServiceModel.Http.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ServiceModel.NetTcp.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ServiceModel.Primitives.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.ServiceModel.Security.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Text.Encoding.Extensions.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Text.Encoding.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Text.RegularExpressions.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Threading.Tasks.Parallel.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Threading.Tasks.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Threading.Timer.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Threading.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Xml.ReaderWriter.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Xml.XDocument.dll",
+        "build/.NETFramework/v4.6.1/Facades/System.Xml.XmlSerializer.dll",
+        "build/.NETFramework/v4.6.1/ISymWrapper.dll",
+        "build/.NETFramework/v4.6.1/ISymWrapper.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Activities.Build.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Activities.Build.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Conversion.v4.0.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Conversion.v4.0.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Engine.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Engine.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Framework.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Framework.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Tasks.v4.0.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Tasks.v4.0.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Utilities.v4.0.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.Utilities.v4.0.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.Build.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.CSharp.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.CSharp.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.JScript.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.JScript.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualBasic.Compatibility.Data.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualBasic.Compatibility.Data.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualBasic.Compatibility.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualBasic.Compatibility.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualBasic.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualBasic.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualC.STLCLR.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualC.STLCLR.xml",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualC.dll",
+        "build/.NETFramework/v4.6.1/Microsoft.VisualC.xml",
+        "build/.NETFramework/v4.6.1/PermissionSets/FullTrust.xml",
+        "build/.NETFramework/v4.6.1/PermissionSets/Internet.xml",
+        "build/.NETFramework/v4.6.1/PermissionSets/LocalIntranet.xml",
+        "build/.NETFramework/v4.6.1/PresentationBuildTasks.dll",
+        "build/.NETFramework/v4.6.1/PresentationBuildTasks.xml",
+        "build/.NETFramework/v4.6.1/PresentationCore.dll",
+        "build/.NETFramework/v4.6.1/PresentationCore.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Aero.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Aero.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Aero2.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Aero2.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.AeroLite.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.AeroLite.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Classic.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Classic.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Luna.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Luna.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Royale.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.Royale.xml",
+        "build/.NETFramework/v4.6.1/PresentationFramework.dll",
+        "build/.NETFramework/v4.6.1/PresentationFramework.xml",
+        "build/.NETFramework/v4.6.1/ReachFramework.dll",
+        "build/.NETFramework/v4.6.1/ReachFramework.xml",
+        "build/.NETFramework/v4.6.1/RedistList/FrameworkList.xml",
+        "build/.NETFramework/v4.6.1/System.Activities.Core.Presentation.dll",
+        "build/.NETFramework/v4.6.1/System.Activities.Core.Presentation.xml",
+        "build/.NETFramework/v4.6.1/System.Activities.DurableInstancing.dll",
+        "build/.NETFramework/v4.6.1/System.Activities.DurableInstancing.xml",
+        "build/.NETFramework/v4.6.1/System.Activities.Presentation.dll",
+        "build/.NETFramework/v4.6.1/System.Activities.Presentation.xml",
+        "build/.NETFramework/v4.6.1/System.Activities.dll",
+        "build/.NETFramework/v4.6.1/System.Activities.xml",
+        "build/.NETFramework/v4.6.1/System.AddIn.Contract.dll",
+        "build/.NETFramework/v4.6.1/System.AddIn.Contract.xml",
+        "build/.NETFramework/v4.6.1/System.AddIn.dll",
+        "build/.NETFramework/v4.6.1/System.AddIn.xml",
+        "build/.NETFramework/v4.6.1/System.ComponentModel.Composition.Registration.dll",
+        "build/.NETFramework/v4.6.1/System.ComponentModel.Composition.Registration.xml",
+        "build/.NETFramework/v4.6.1/System.ComponentModel.Composition.dll",
+        "build/.NETFramework/v4.6.1/System.ComponentModel.Composition.xml",
+        "build/.NETFramework/v4.6.1/System.ComponentModel.DataAnnotations.dll",
+        "build/.NETFramework/v4.6.1/System.ComponentModel.DataAnnotations.xml",
+        "build/.NETFramework/v4.6.1/System.Configuration.Install.dll",
+        "build/.NETFramework/v4.6.1/System.Configuration.Install.xml",
+        "build/.NETFramework/v4.6.1/System.Configuration.dll",
+        "build/.NETFramework/v4.6.1/System.Configuration.xml",
+        "build/.NETFramework/v4.6.1/System.Core.dll",
+        "build/.NETFramework/v4.6.1/System.Core.xml",
+        "build/.NETFramework/v4.6.1/System.Data.DataSetExtensions.dll",
+        "build/.NETFramework/v4.6.1/System.Data.DataSetExtensions.xml",
+        "build/.NETFramework/v4.6.1/System.Data.Entity.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Data.Entity.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Data.Entity.dll",
+        "build/.NETFramework/v4.6.1/System.Data.Entity.xml",
+        "build/.NETFramework/v4.6.1/System.Data.Linq.dll",
+        "build/.NETFramework/v4.6.1/System.Data.Linq.xml",
+        "build/.NETFramework/v4.6.1/System.Data.OracleClient.dll",
+        "build/.NETFramework/v4.6.1/System.Data.OracleClient.xml",
+        "build/.NETFramework/v4.6.1/System.Data.Services.Client.dll",
+        "build/.NETFramework/v4.6.1/System.Data.Services.Client.xml",
+        "build/.NETFramework/v4.6.1/System.Data.Services.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Data.Services.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Data.Services.dll",
+        "build/.NETFramework/v4.6.1/System.Data.Services.xml",
+        "build/.NETFramework/v4.6.1/System.Data.SqlXml.dll",
+        "build/.NETFramework/v4.6.1/System.Data.SqlXml.xml",
+        "build/.NETFramework/v4.6.1/System.Data.dll",
+        "build/.NETFramework/v4.6.1/System.Data.xml",
+        "build/.NETFramework/v4.6.1/System.Deployment.dll",
+        "build/.NETFramework/v4.6.1/System.Deployment.xml",
+        "build/.NETFramework/v4.6.1/System.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Device.dll",
+        "build/.NETFramework/v4.6.1/System.Device.xml",
+        "build/.NETFramework/v4.6.1/System.DirectoryServices.AccountManagement.dll",
+        "build/.NETFramework/v4.6.1/System.DirectoryServices.AccountManagement.xml",
+        "build/.NETFramework/v4.6.1/System.DirectoryServices.Protocols.dll",
+        "build/.NETFramework/v4.6.1/System.DirectoryServices.Protocols.xml",
+        "build/.NETFramework/v4.6.1/System.DirectoryServices.dll",
+        "build/.NETFramework/v4.6.1/System.DirectoryServices.xml",
+        "build/.NETFramework/v4.6.1/System.Drawing.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Drawing.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Drawing.dll",
+        "build/.NETFramework/v4.6.1/System.Drawing.xml",
+        "build/.NETFramework/v4.6.1/System.Dynamic.dll",
+        "build/.NETFramework/v4.6.1/System.EnterpriseServices.Thunk.dll",
+        "build/.NETFramework/v4.6.1/System.EnterpriseServices.Wrapper.dll",
+        "build/.NETFramework/v4.6.1/System.EnterpriseServices.dll",
+        "build/.NETFramework/v4.6.1/System.EnterpriseServices.xml",
+        "build/.NETFramework/v4.6.1/System.IO.Compression.FileSystem.dll",
+        "build/.NETFramework/v4.6.1/System.IO.Compression.FileSystem.xml",
+        "build/.NETFramework/v4.6.1/System.IO.Compression.dll",
+        "build/.NETFramework/v4.6.1/System.IO.Compression.xml",
+        "build/.NETFramework/v4.6.1/System.IO.Log.dll",
+        "build/.NETFramework/v4.6.1/System.IO.Log.xml",
+        "build/.NETFramework/v4.6.1/System.IdentityModel.Selectors.dll",
+        "build/.NETFramework/v4.6.1/System.IdentityModel.Selectors.xml",
+        "build/.NETFramework/v4.6.1/System.IdentityModel.Services.dll",
+        "build/.NETFramework/v4.6.1/System.IdentityModel.Services.xml",
+        "build/.NETFramework/v4.6.1/System.IdentityModel.dll",
+        "build/.NETFramework/v4.6.1/System.IdentityModel.xml",
+        "build/.NETFramework/v4.6.1/System.Linq.xml",
+        "build/.NETFramework/v4.6.1/System.Management.Instrumentation.dll",
+        "build/.NETFramework/v4.6.1/System.Management.Instrumentation.xml",
+        "build/.NETFramework/v4.6.1/System.Management.dll",
+        "build/.NETFramework/v4.6.1/System.Management.xml",
+        "build/.NETFramework/v4.6.1/System.Messaging.dll",
+        "build/.NETFramework/v4.6.1/System.Messaging.xml",
+        "build/.NETFramework/v4.6.1/System.Net.Http.WebRequest.dll",
+        "build/.NETFramework/v4.6.1/System.Net.Http.WebRequest.xml",
+        "build/.NETFramework/v4.6.1/System.Net.Http.dll",
+        "build/.NETFramework/v4.6.1/System.Net.Http.xml",
+        "build/.NETFramework/v4.6.1/System.Net.dll",
+        "build/.NETFramework/v4.6.1/System.Net.xml",
+        "build/.NETFramework/v4.6.1/System.Numerics.Vectors.dll",
+        "build/.NETFramework/v4.6.1/System.Numerics.dll",
+        "build/.NETFramework/v4.6.1/System.Numerics.xml",
+        "build/.NETFramework/v4.6.1/System.Printing.dll",
+        "build/.NETFramework/v4.6.1/System.Printing.xml",
+        "build/.NETFramework/v4.6.1/System.Reflection.Context.dll",
+        "build/.NETFramework/v4.6.1/System.Reflection.Context.xml",
+        "build/.NETFramework/v4.6.1/System.Runtime.Caching.dll",
+        "build/.NETFramework/v4.6.1/System.Runtime.Caching.xml",
+        "build/.NETFramework/v4.6.1/System.Runtime.DurableInstancing.dll",
+        "build/.NETFramework/v4.6.1/System.Runtime.DurableInstancing.xml",
+        "build/.NETFramework/v4.6.1/System.Runtime.Remoting.dll",
+        "build/.NETFramework/v4.6.1/System.Runtime.Remoting.xml",
+        "build/.NETFramework/v4.6.1/System.Runtime.Serialization.Formatters.Soap.dll",
+        "build/.NETFramework/v4.6.1/System.Runtime.Serialization.Formatters.Soap.xml",
+        "build/.NETFramework/v4.6.1/System.Runtime.Serialization.dll",
+        "build/.NETFramework/v4.6.1/System.Runtime.Serialization.xml",
+        "build/.NETFramework/v4.6.1/System.Security.dll",
+        "build/.NETFramework/v4.6.1/System.Security.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Activation.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Activation.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Activities.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Activities.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Channels.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Channels.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Discovery.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Discovery.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Routing.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Routing.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Web.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.Web.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceModel.xml",
+        "build/.NETFramework/v4.6.1/System.ServiceProcess.dll",
+        "build/.NETFramework/v4.6.1/System.ServiceProcess.xml",
+        "build/.NETFramework/v4.6.1/System.Speech.dll",
+        "build/.NETFramework/v4.6.1/System.Speech.xml",
+        "build/.NETFramework/v4.6.1/System.Threading.Tasks.Dataflow.xml",
+        "build/.NETFramework/v4.6.1/System.Transactions.dll",
+        "build/.NETFramework/v4.6.1/System.Transactions.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Abstractions.dll",
+        "build/.NETFramework/v4.6.1/System.Web.ApplicationServices.dll",
+        "build/.NETFramework/v4.6.1/System.Web.ApplicationServices.xml",
+        "build/.NETFramework/v4.6.1/System.Web.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Web.DataVisualization.dll",
+        "build/.NETFramework/v4.6.1/System.Web.DataVisualization.xml",
+        "build/.NETFramework/v4.6.1/System.Web.DynamicData.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Web.DynamicData.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Web.DynamicData.dll",
+        "build/.NETFramework/v4.6.1/System.Web.DynamicData.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Entity.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Entity.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Entity.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Entity.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Extensions.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Extensions.Design.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Extensions.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Extensions.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Mobile.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Mobile.xml",
+        "build/.NETFramework/v4.6.1/System.Web.RegularExpressions.dll",
+        "build/.NETFramework/v4.6.1/System.Web.RegularExpressions.xml",
+        "build/.NETFramework/v4.6.1/System.Web.Routing.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Services.dll",
+        "build/.NETFramework/v4.6.1/System.Web.Services.xml",
+        "build/.NETFramework/v4.6.1/System.Web.dll",
+        "build/.NETFramework/v4.6.1/System.Web.xml",
+        "build/.NETFramework/v4.6.1/System.Windows.Controls.Ribbon.dll",
+        "build/.NETFramework/v4.6.1/System.Windows.Controls.Ribbon.xml",
+        "build/.NETFramework/v4.6.1/System.Windows.Forms.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.6.1/System.Windows.Forms.DataVisualization.dll",
+        "build/.NETFramework/v4.6.1/System.Windows.Forms.DataVisualization.xml",
+        "build/.NETFramework/v4.6.1/System.Windows.Forms.dll",
+        "build/.NETFramework/v4.6.1/System.Windows.Forms.xml",
+        "build/.NETFramework/v4.6.1/System.Windows.Input.Manipulations.dll",
+        "build/.NETFramework/v4.6.1/System.Windows.Input.Manipulations.xml",
+        "build/.NETFramework/v4.6.1/System.Windows.Presentation.dll",
+        "build/.NETFramework/v4.6.1/System.Windows.Presentation.xml",
+        "build/.NETFramework/v4.6.1/System.Windows.dll",
+        "build/.NETFramework/v4.6.1/System.Workflow.Activities.dll",
+        "build/.NETFramework/v4.6.1/System.Workflow.Activities.xml",
+        "build/.NETFramework/v4.6.1/System.Workflow.ComponentModel.dll",
+        "build/.NETFramework/v4.6.1/System.Workflow.ComponentModel.xml",
+        "build/.NETFramework/v4.6.1/System.Workflow.Runtime.dll",
+        "build/.NETFramework/v4.6.1/System.Workflow.Runtime.xml",
+        "build/.NETFramework/v4.6.1/System.WorkflowServices.dll",
+        "build/.NETFramework/v4.6.1/System.WorkflowServices.xml",
+        "build/.NETFramework/v4.6.1/System.Xaml.dll",
+        "build/.NETFramework/v4.6.1/System.Xaml.xml",
+        "build/.NETFramework/v4.6.1/System.Xml.Linq.dll",
+        "build/.NETFramework/v4.6.1/System.Xml.Linq.xml",
+        "build/.NETFramework/v4.6.1/System.Xml.Serialization.dll",
+        "build/.NETFramework/v4.6.1/System.Xml.dll",
+        "build/.NETFramework/v4.6.1/System.Xml.xml",
+        "build/.NETFramework/v4.6.1/System.dll",
+        "build/.NETFramework/v4.6.1/System.xml",
+        "build/.NETFramework/v4.6.1/UIAutomationClient.dll",
+        "build/.NETFramework/v4.6.1/UIAutomationClient.xml",
+        "build/.NETFramework/v4.6.1/UIAutomationClientsideProviders.dll",
+        "build/.NETFramework/v4.6.1/UIAutomationClientsideProviders.xml",
+        "build/.NETFramework/v4.6.1/UIAutomationProvider.dll",
+        "build/.NETFramework/v4.6.1/UIAutomationProvider.xml",
+        "build/.NETFramework/v4.6.1/UIAutomationTypes.dll",
+        "build/.NETFramework/v4.6.1/UIAutomationTypes.xml",
+        "build/.NETFramework/v4.6.1/WindowsBase.dll",
+        "build/.NETFramework/v4.6.1/WindowsBase.xml",
+        "build/.NETFramework/v4.6.1/WindowsFormsIntegration.dll",
+        "build/.NETFramework/v4.6.1/WindowsFormsIntegration.xml",
+        "build/.NETFramework/v4.6.1/XamlBuildTask.dll",
+        "build/.NETFramework/v4.6.1/XamlBuildTask.xml",
+        "build/.NETFramework/v4.6.1/mscorlib.dll",
+        "build/.NETFramework/v4.6.1/mscorlib.xml",
+        "build/.NETFramework/v4.6.1/namespaces.xml",
+        "build/.NETFramework/v4.6.1/sysglobl.dll",
+        "build/.NETFramework/v4.6.1/sysglobl.xml",
+        "build/Microsoft.NETFramework.ReferenceAssemblies.net461.targets",
+        "microsoft.netframework.referenceassemblies.net461.1.0.2.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.net461.nuspec"
+      ]
+    },
+    "OxyPlot.Core/2.2.0": {
+      "sha512": "QhXNdXR5FPpro/VoLx3BOp6AhQo7YrbfmWEZ9cgY+pnYM7RYORZjnu+aDMA8ka9A1r8hLkX//NbCPZNUv+l8qA==",
+      "type": "package",
+      "path": "oxyplot.core/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "README.md",
+        "lib/net462/OxyPlot.dll",
+        "lib/net462/OxyPlot.xml",
+        "lib/net6.0/OxyPlot.dll",
+        "lib/net6.0/OxyPlot.xml",
+        "lib/net8.0/OxyPlot.dll",
+        "lib/net8.0/OxyPlot.xml",
+        "lib/netstandard2.0/OxyPlot.dll",
+        "lib/netstandard2.0/OxyPlot.xml",
+        "oxyplot.core.2.2.0.nupkg.sha512",
+        "oxyplot.core.nuspec"
+      ]
+    },
+    "OxyPlot.SkiaSharp/2.2.0": {
+      "sha512": "0+t9fNJK/pTPZdjUjFOeiE22s7KoVwDw4apCP7HVpGDVyUQ2FNIMxCQpJaN6qX/HK+n8xTnFv0DdG1g5MMcDLQ==",
+      "type": "package",
+      "path": "oxyplot.skiasharp/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "README.md",
+        "lib/net462/OxyPlot.SkiaSharp.dll",
+        "lib/net462/OxyPlot.SkiaSharp.xml",
+        "lib/net6.0/OxyPlot.SkiaSharp.dll",
+        "lib/net6.0/OxyPlot.SkiaSharp.xml",
+        "lib/net8.0/OxyPlot.SkiaSharp.dll",
+        "lib/net8.0/OxyPlot.SkiaSharp.xml",
+        "lib/netstandard2.0/OxyPlot.SkiaSharp.dll",
+        "lib/netstandard2.0/OxyPlot.SkiaSharp.xml",
+        "oxyplot.skiasharp.2.2.0.nupkg.sha512",
+        "oxyplot.skiasharp.nuspec"
+      ]
+    },
+    "OxyPlot.WindowsForms/2.2.0": {
+      "sha512": "jkveaQ7d3PanUP6OKaZ+IXFPuwpyabifPQiQZ40pQls8Tuedf0mUZ8JcLkMltK5Jkj/JRwGP2cNn1oJ8NwaV3A==",
+      "type": "package",
+      "path": "oxyplot.windowsforms/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "README.md",
+        "lib/net462/OxyPlot.WindowsForms.dll",
+        "lib/net462/OxyPlot.WindowsForms.xml",
+        "lib/net6.0-windows7.0/OxyPlot.WindowsForms.dll",
+        "lib/net6.0-windows7.0/OxyPlot.WindowsForms.xml",
+        "lib/net8.0-windows7.0/OxyPlot.WindowsForms.dll",
+        "lib/net8.0-windows7.0/OxyPlot.WindowsForms.xml",
+        "oxyplot.windowsforms.2.2.0.nupkg.sha512",
+        "oxyplot.windowsforms.nuspec"
+      ]
+    },
+    "SkiaSharp/3.116.1": {
+      "sha512": "DNDwbRjP+aMo27dV2h/uHCVTcWubWWxHnPLiePNyl24f4Pv43mQ8AQQeseOrKR+J3AOCEs6t0sUjo0aa3j3RWQ==",
+      "type": "package",
+      "path": "skiasharp/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.dll",
+        "lib/net8.0-android34.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.xml",
+        "lib/net8.0-ios17.0/SkiaSharp.dll",
+        "lib/net8.0-ios17.0/SkiaSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.pdb",
+        "lib/net8.0-macos14.0/SkiaSharp.dll",
+        "lib/net8.0-macos14.0/SkiaSharp.pdb",
+        "lib/net8.0-tizen7.0/SkiaSharp.dll",
+        "lib/net8.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net8.0-tvos17.0/SkiaSharp.dll",
+        "lib/net8.0-tvos17.0/SkiaSharp.pdb",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.pdb",
+        "lib/net8.0/SkiaSharp.dll",
+        "lib/net8.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "ref/net462/SkiaSharp.dll",
+        "ref/net6.0/SkiaSharp.dll",
+        "ref/net8.0-android34.0/SkiaSharp.dll",
+        "ref/net8.0-ios17.0/SkiaSharp.dll",
+        "ref/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "ref/net8.0-macos14.0/SkiaSharp.dll",
+        "ref/net8.0-tizen7.0/SkiaSharp.dll",
+        "ref/net8.0-tvos17.0/SkiaSharp.dll",
+        "ref/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "ref/net8.0/SkiaSharp.dll",
+        "ref/netstandard2.0/SkiaSharp.dll",
+        "ref/netstandard2.1/SkiaSharp.dll",
+        "skiasharp.3.116.1.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.HarfBuzz/2.88.8": {
+      "sha512": "ajSyJ2D17R0kZ4FwKwFrJTsYs3D3Y9iRBLhNecROR7dOxC6VTFaMPXJuwQB8KYpAqgmb2JAJFEgZ3i8MaaIw1g==",
+      "type": "package",
+      "path": "skiasharp.harfbuzz/2.88.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net462/SkiaSharp.HarfBuzz.dll",
+        "lib/net462/SkiaSharp.HarfBuzz.pdb",
+        "lib/net462/SkiaSharp.HarfBuzz.xml",
+        "lib/net6.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net6.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/net6.0/SkiaSharp.HarfBuzz.xml",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.xml",
+        "skiasharp.harfbuzz.2.88.8.nupkg.sha512",
+        "skiasharp.harfbuzz.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.macOS/3.116.1": {
+      "sha512": "3KPvpKysDmEMt0NnAZPX5U6KFk0LmG/72/IjAIJemIksIZ0Tjs9pGpr3L+zboVCv1MLVoJLKl3nJDXUG6Jda6A==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.macos/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net8.0-macos14.0/SkiaSharp.NativeAssets.macOS.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-macos14.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "skiasharp.nativeassets.macos.3.116.1.nupkg.sha512",
+        "skiasharp.nativeassets.macos.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/3.116.1": {
+      "sha512": "dRQ75MCI8oz6zAs2Y1w6pq6ARs4MhdNG+gf3doOxOxdnueDXffQLGQIxON54GDoxc0WjKOoHMKBR4DhaduwwQw==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.3.116.1.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "MathNet.Numerics >= 5.0.0",
+      "OxyPlot.SkiaSharp >= 2.2.0",
+      "OxyPlot.WindowsForms >= 2.2.0",
+      "SkiaSharp >= 3.116.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\HP\\VectorAnalysisApp\\VectorAnalysisApp.csproj",
+      "projectName": "VectorAnalysisApp",
+      "projectPath": "C:\\Users\\HP\\VectorAnalysisApp\\VectorAnalysisApp.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\VectorAnalysisApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "MathNet.Numerics": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "OxyPlot.SkiaSharp": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "OxyPlot.WindowsForms": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[3.116.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OxyPlot.WindowsForms 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OxyPlot.WindowsForms",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

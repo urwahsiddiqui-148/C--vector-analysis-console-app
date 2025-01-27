@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "FIWDpCGK4JM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\VectorAnalysisApp\\VectorAnalysisApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\harfbuzzsharp\\7.3.0.2\\harfbuzzsharp.7.3.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\7.3.0.2\\harfbuzzsharp.nativeassets.macos.7.3.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\7.3.0.2\\harfbuzzsharp.nativeassets.win32.7.3.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net461\\1.0.2\\microsoft.netframework.referenceassemblies.net461.1.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\oxyplot.skiasharp\\2.2.0\\oxyplot.skiasharp.2.2.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\oxyplot.windowsforms\\2.2.0\\oxyplot.windowsforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\skiasharp\\3.116.1\\skiasharp.3.116.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.8\\skiasharp.harfbuzz.2.88.8.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.116.1\\skiasharp.nativeassets.macos.3.116.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.116.1\\skiasharp.nativeassets.win32.3.116.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OxyPlot.WindowsForms 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OxyPlot.WindowsForms",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
